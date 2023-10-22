@@ -1,11 +1,18 @@
-import logo from "./logo.svg";
-import "./App.css";
-import FormElement from "./components/Form";
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  BrowserRouter,
+} from "react-router-dom";
+import HomePage from "./Pages/HomePage";
+
 function App() {
   return (
-    <div className="App">
-      <FormElement />
-    </div>
+    <BrowserRouter>
+      <Router>
+        <Route path="/" element={<HomePage />} />
+      </Router>
+    </BrowserRouter>
   );
 }
 
