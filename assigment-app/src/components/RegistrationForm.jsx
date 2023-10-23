@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/RegistrationForm.css";
 
 export default class RegistrationForm extends React.Component {
   state = {
