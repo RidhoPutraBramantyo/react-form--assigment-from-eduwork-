@@ -1,20 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../css/HomePage.css"; // Impor file CSS Anda
 
 const HomePage = () => {
   return (
-    <div>
-      <h1>Welcome to my App</h1>
-      <p>Here can check my Assigment</p>
-      <div>
+    <div className="home-page">
+      <h1 className="welcome-heading">Welcome to My App</h1>
+      <p className="app-description">Here you can check my Assignment</p>
+      <div className="button-container">
         <Link to="/registration">
-          <button>Registration Page</button>
+          <button className="registration-button">Registration Page</button>
         </Link>
         <Link to="/signin">
-          <button>Sign In</button>
+          <button className="signin-button">Sign In</button>
         </Link>{" "}
         <Link to="/signup">
-          <button>Sign Up</button>
+          <button className="signup-button">Sign Up</button>
+        </Link>
+        <Link to="/withFormik">
+          <button className="with-formik-button">withFormik</button>
         </Link>
       </div>
     </div>

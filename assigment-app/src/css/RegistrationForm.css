@@ -1,0 +1,23 @@
+.registration-form-container {
+  margin: 100px auto;
+  border: 1px solid gray;
+  padding: 20px;
+}
+
+.form {
+  text-align: left;
+}
+
+.submit-button {
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}

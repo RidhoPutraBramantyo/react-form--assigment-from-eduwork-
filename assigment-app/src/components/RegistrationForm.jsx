@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/RegistrationForm.css";
+import "../css/RegistrationForm.css"; // Impor file CSS Anda
 
 export default class RegistrationForm extends React.Component {
   state = {
@@ -9,15 +9,10 @@ export default class RegistrationForm extends React.Component {
     alamat: "",
     member: false,
   };
+
   render() {
     return (
-      <div
-        style={{
-          margin: "100px auto",
-          border: "1px solid gray",
-          padding: "20px",
-        }}
-      >
+      <div className="registration-form-container">
         <form className="form">
           <label>
             Nama:{" "}
@@ -74,7 +69,7 @@ export default class RegistrationForm extends React.Component {
           </label>
           <br />
           <label>
-            <button>Submit</button>
+            <button className="submit-button">Submit</button>
           </label>
         </form>
       </div>

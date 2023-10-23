@@ -4,6 +4,7 @@ import HomePage from "./Pages/HomePage";
 import SignUp from "./components/SignUp";
 import SignIn from "./components/SignIn";
 import RegistrationForm from "./components/RegistrationForm";
+import WithFormik from "./components/WithFormik";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/registration" element={<RegistrationForm />} />
+        <Route path="/withformik" element={<WithFormik />} />
       </Routes>
     </Router>
   );
