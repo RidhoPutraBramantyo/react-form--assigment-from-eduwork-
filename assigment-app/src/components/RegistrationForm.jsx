@@ -10,10 +10,20 @@ export default class RegistrationForm extends React.Component {
     member: false,
   };
 
+  handleSubmit = () => {
+    alert(
+      `Nama: ${this.state.nama} 
+      Jurusan: ${this.state.jurusan} 
+      Gender: ${this.state.gender} 
+      Alamat: ${this.state.alamat} 
+      Member: ${this.state.member ? "YES" : "NO"}`
+    );
+  };
+
   render() {
     return (
       <div className="registration-form-container">
-        <form className="form">
+        <form className="form" onSubmit={this.handleSubmit}>
           <label>
             Nama:{" "}
             <input
@@ -48,9 +58,27 @@ export default class RegistrationForm extends React.Component {
           <br />
           <label>
             Jenis Kelamin:
-            <input type="radio" value="Laki-Laki" name="gender" />
+            <input
+              type="radio"
+              value="Laki-Laki"
+              name="gender"
+              onChange={(e) =>
+                this.setState({ gender: e.target.value }, () =>
+                  console.log(this.state)
+                )
+              }
+            />
             Laki-laki
-            <input type="radio" value="Perempuan" name="gender" />
+            <input
+              type="radio"
+              value="Perempuan"
+              name="gender"
+              onChange={(e) =>
+                this.setState({ gender: e.target.value }, () =>
+                  console.log(this.state)
+                )
+              }
+            />
             Perempuan
           </label>
           <br />
@@ -61,15 +89,36 @@ export default class RegistrationForm extends React.Component {
             }}
           >
             Alamat:
-            <textarea cols="30" rows="10" name="alamat" />
+            <textarea
+              cols="30"
+              rows="10"
+              name="alamat"
+              onChange={(e) =>
+                this.setState({ alamat: e.target.value }, () =>
+                  console.log(this.state)
+                )
+              }
+            />
           </label>
           <br />
           <label>
-            Member: <input type="checkbox" value={true} name="member" />
+            Member:{" "}
+            <input
+              type="checkbox"
+              checked={this.state.member}
+              name="member"
+              onChange={(e) =>
+                this.setState({ member: e.target.checked }, () =>
+                  console.log(this.state)
+                )
+              }
+            />
           </label>
           <br />
           <label>
-            <button className="submit-button">Submit</button>
+            <button className="submit-button" type="submit">
+              Submit
+            </button>
           </label>
         </form>
       </div>
