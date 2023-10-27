@@ -1,17 +1,43 @@
-.home-page {
+/* CSS untuk elemen video */
+#background-video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* CSS untuk mengatur kontainer video */
+.video-container {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+/* CSS untuk elemen video container yang memiliki aspek rasio 16:9 */
+.video-container-16-9 {
+  padding-top: 56.25%; /* 9/16 * 100% = 56.25% untuk menciptakan aspek rasio 16:9 */
+}
+
+/* CSS untuk konten di atas video */
+.content {
+  position: relative;
+  z-index: 1; /* Memastikan konten tampil di atas video */
   text-align: center;
-  margin: 100px auto;
-  padding: 20px;
+  color: #fff; /* Warna teks yang kontras dengan video */
 }
 
 .welcome-heading {
   font-size: 24px;
-  color: #333;
+  margin-top: 100px; /* Atur jarak dari atas */
 }
 
 .app-description {
   font-size: 16px;
-  color: #666;
+  color: #ccc; /* Warna deskripsi yang lebih ringan */
   margin-bottom: 20px;
 }
 
