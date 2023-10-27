@@ -6,6 +6,8 @@ import SignIn from "./components/SignIn";
 import RegistrationForm from "./components/RegistrationForm";
 import WithFormik from "./components/WithFormik";
 
+import NewsApp from "./Pages/NewsApp";
+
 function App() {
   return (
     <Router>
@@ -15,6 +17,7 @@ function App() {
         <Route path="/signin" element={<SignIn />} />
         <Route path="/registration" element={<RegistrationForm />} />
         <Route path="/withformik" element={<WithFormik />} />
+        <Route path="/news" element={<NewsApp />} />
       </Routes>
     </Router>
   );

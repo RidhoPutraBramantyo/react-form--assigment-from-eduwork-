@@ -1,0 +1,28 @@
+/* CSS untuk NewsPortal Component */
+.news-portal {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.news-portal h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.news-portal p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.news-portal div {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.news-portal div:hover {
+  background-color: #f5f5f5;
+}

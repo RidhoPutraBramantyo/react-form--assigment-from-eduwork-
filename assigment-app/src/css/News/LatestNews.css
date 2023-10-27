@@ -1,0 +1,21 @@
+/* CSS untuk Latest News Component */
+.latest-news {
+  margin: 1rem 0;
+}
+
+.latest-news h2 {
+  font-size: 20px;
+}
+
+.latest-news div {
+  margin: 1rem 0;
+}
+
+.latest-news h3 {
+  font-size: 18px;
+}
+
+.latest-news img {
+  max-width: 100%;
+  height: auto;
+}

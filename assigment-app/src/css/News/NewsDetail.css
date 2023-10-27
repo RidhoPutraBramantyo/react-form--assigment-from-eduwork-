@@ -1,0 +1,18 @@
+/* CSS untuk News Detail Component */
+.news-detail {
+  margin: 1rem 0;
+}
+
+.news-detail h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.news-detail img {
+  max-width: 100%;
+  height: auto;
+}
+
+.news-detail p {
+  margin: 1rem 0;
+}

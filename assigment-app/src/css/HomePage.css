@@ -24,7 +24,8 @@
 .registration-button,
 .signin-button,
 .signup-button,
-.with-formik-button {
+.with-formik-button,
+.news-portal-button {
   background-color: #0074d9;
   color: #fff;
   border: none;

@@ -20,6 +20,9 @@ const HomePage = () => {
         <Link to="/withFormik">
           <button className="with-formik-button">withFormik</button>
         </Link>
+        <Link to="/news">
+          <button className="news-portal-button">News App</button>
+        </Link>
       </div>
     </div>
   );
