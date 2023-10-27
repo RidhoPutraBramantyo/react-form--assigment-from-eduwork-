@@ -6,15 +6,11 @@ import "../css/HomePage.css"; // Impor file CSS Anda
 const HomePage = () => {
   return (
     <div className="home-page">
-      <video
-        autoPlay
-        muted
-        loop
-        id="background-video"
-        className="video-container video-container-16-9"
-      >
-        <source src={video} type="video/mp4" />
-      </video>
+      <center>
+        <video autoPlay muted loop className="video">
+          <source src={video} type="video/mp4" />
+        </video>
+      </center>
 
       <div className="content">
         <h1 className="welcome-heading">Welcome to My App</h1>
