@@ -1,11 +1,11 @@
-/* CSS untuk NewsApp Component */
+/* CSS for NewsApp Component */
 .news-app {
   background-color: #f2f2f2;
   padding: 20px;
   font-family: Arial, sans-serif;
 }
 
-/* CSS untuk Header Component */
+/* CSS for Header Component */
 .header {
   background-color: #333;
   color: #fff;
@@ -13,7 +13,7 @@
   text-align: center;
 }
 
-/* CSS untuk LatestNews Component */
+/* CSS for LatestNews Component */
 .latest-news {
   background-color: #fff;
   border: 1px solid #ddd;
@@ -22,7 +22,7 @@
   margin-bottom: 20px;
 }
 
-/* CSS untuk CategoryNews Component */
+/* CSS for CategoryNews Component */
 .category-news {
   background-color: #fff;
   border: 1px solid #ddd;
@@ -35,13 +35,20 @@
   background-color: #007bff;
   color: #fff;
   border: none;
-  padding: 10px 20px;
-  margin: 5px;
+  padding: 12px 24px; /* Slightly larger padding for better touch interaction */
+  margin: 10px; /* Increased margin for better spacing */
   border-radius: 5px;
   cursor: pointer;
+  font-size: 18px; /* Increased font size for better readability */
+  transition: background-color 0.2s; /* Smooth hover effect */
 }
 
-/* CSS untuk NewsPortal Component */
+/* Hover effect */
+.category-button:hover {
+  background-color: #0056b3;
+}
+
+/* CSS for NewsPortal Component */
 .news-portal {
   background-color: #fff;
   border: 1px solid #ddd;
@@ -67,7 +74,7 @@
   line-height: 1.5;
 }
 
-/* CSS untuk NewsDetail Component */
+/* CSS for NewsDetail Component */
 .news-detail {
   background-color: #fff;
   border: 1px solid #ddd;
@@ -90,7 +97,31 @@
   background-color: #007bff;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 24px; /* Slightly larger padding for better touch interaction */
   border-radius: 5px;
   cursor: pointer;
+  font-size: 18px; /* Increased font size for better readability */
+  transition: background-color 0.2s; /* Smooth hover effect */
+}
+
+/* Hover effect for the back button */
+.news-detail-back-button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for small screens (up to 768px wide) */
+@media screen and (max-width: 768px) {
+  .category-button {
+    padding: 10px 20px;
+    margin: 8px;
+  }
+}
+
+/* Styles for even smaller screens (up to 480px wide) */
+@media screen and (max-width: 480px) {
+  .category-button {
+    padding: 8px 16px;
+    margin: 6px;
+    font-size: 16px;
+  }
 }

@@ -1,25 +1,26 @@
+/* Base styles for all screen sizes */
 .home-page {
   text-align: center;
-  margin: 100px auto;
-  padding: 20px;
+  margin: 20px auto; /* Decreased margin for small screens */
+  padding: 10px; /* Decreased padding for small screens */
   position: relative;
-  overflow: hidden; /* Menghindari pemotongan video yang berlebihan */
+  overflow: hidden; /* Avoid excessive video cropping */
 }
 
 .video {
-  width: auto;
-  height: auto;
+  max-width: 100%; /* Make the video responsive */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .welcome-heading {
-  font-size: 24px;
+  font-size: 20px; /* Slightly smaller font size for small screens */
   color: #333;
 }
 
 .app-description {
-  font-size: 16px;
+  font-size: 14px; /* Smaller font size for small screens */
   color: #666;
-  margin-bottom: 20px;
+  margin-bottom: 10px; /* Decreased margin for small screens */
 }
 
 .button-container {
@@ -28,6 +29,7 @@
   align-items: center;
 }
 
+/* Base button styles */
 .registration-button,
 .signin-button,
 .signup-button,
@@ -37,17 +39,73 @@
   color: #fff;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
-  margin: 5px;
+  padding: 12px 24px; /* Slightly larger padding for better touch interaction */
+  margin: 10px; /* Increased margin for better spacing */
   cursor: pointer;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px; /* Increased font size for better readability */
   text-align: center;
+  transition: background-color 0.2s; /* Smooth hover effect */
 }
 
+/* Hover effect */
 .registration-button:hover,
 .signin-button:hover,
 .signup-button:hover,
-.with-formik-button:hover {
+.with-formik-button:hover,
+.news-portal-button:hover {
   background-color: #0056b3;
 }
+
+/* Example: Different style for the 'Signup' button */
+.signup-button {
+  background-color: #28a745; /* Green background color */
+}
+
+.signup-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Example: Different style for the 'News Portal' button */
+.news-portal-button {
+  background-color: #ff5722; /* Orange background color */
+}
+
+.news-portal-button:hover {
+  background-color: #e64718; /* Darker orange on hover */
+}
+
+/* Styles for small screens (up to 768px wide) */
+@media screen and (max-width: 768px) {
+  .home-page {
+    margin: 10px auto;
+    padding: 5px;
+  }
+
+  .welcome-heading {
+    font-size: 18px;
+  }
+
+  .app-description {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+}
+
+/* Styles for even smaller screens (up to 480px wide) */
+@media screen and (max-width: 480px) {
+  .home-page {
+    margin: 5px auto;
+    padding: 5px;
+  }
+
+  .welcome-heading {
+    font-size: 16px;
+  }
+
+  .app-description {
+    font-size: 12px;
+  }
+}
+
+/* Additional styles or adjustments for smaller screens can be added as needed */
