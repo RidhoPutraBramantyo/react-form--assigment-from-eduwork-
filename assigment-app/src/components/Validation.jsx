@@ -1,15 +1,31 @@
 import React from "react";
-const Input = ({ Label, type, name }) => {
+const Input = ({ Label, type, name, onChange }) => {
   return (
     <div>
-      <label htmlFor="">{Label}: </label>
+      <label>{Label}: </label>
       <br />
-      <input type={type} name={name} />
+      <input
+        type={type}
+        name={name}
+        onChange={(e) => onChange(e.target.value)}
+      />
       <br />
     </div>
   );
 };
 class Validation extends React.Component {
+  state = {
+    username: "",
+    email: "",
+    password: "",
+    error: "",
+  };
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(this.state);
+  };
+
   render() {
     const style = {
       width: "400px",
@@ -21,9 +37,19 @@ class Validation extends React.Component {
     return (
       <div style={style}>
         <h4>Login Page</h4>
-        <form>
-          <Input type="text" name="username" Label="Username" onChange />
-          <Input type="password" name="password" Label="Password" />
+        <form onSubmit={this.handleSubmit}>
+          <Input
+            type="email"
+            name="email"
+            Label="Email"
+            onChange={(value) => this.setState({ email: value })}
+          />
+          <Input
+            type="password"
+            name="password"
+            Label="Password"
+            onChange={(value) => this.setState({ password: value })}
+          />
           <br />
 
           <button type="submit">Login</button>

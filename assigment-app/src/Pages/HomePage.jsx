@@ -1,16 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import video from "../assets/Aq3ra.mp4";
+import video from "../assets/SeaOfQuanta.mp4";
 import "../css/HomePage.css"; // Impor file CSS Anda
 
 const HomePage = () => {
   return (
     <div className="home-page">
-      <center>
+      <div className="video-background">
         <video autoPlay muted loop className="video">
           <source src={video} type="video/mp4" />
         </video>
-      </center>
+      </div>
 
       <div className="content">
         <h1 className="welcome-heading">Welcome to My App</h1>
