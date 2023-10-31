@@ -1,127 +1,98 @@
-/* CSS for NewsApp Component */
-.news-app {
-  background-color: #f2f2f2;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-}
+/* NewsApp.css */
 
-/* CSS for Header Component */
-.header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
+.news-app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
   text-align: center;
 }
 
-/* CSS for LatestNews Component */
-.latest-news {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 5px;
-  margin-bottom: 20px;
+h1 {
+  color: #333;
 }
 
-/* CSS for CategoryNews Component */
-.category-news {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 5px;
-  margin-bottom: 20px;
+.category-selector {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }
 
-.category-button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 12px 24px; /* Slightly larger padding for better touch interaction */
-  margin: 10px; /* Increased margin for better spacing */
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 18px; /* Increased font size for better readability */
-  transition: background-color 0.2s; /* Smooth hover effect */
+.category-selector select {
+  padding: 5px;
 }
 
-/* Hover effect */
-.category-button:hover {
-  background-color: #0056b3;
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
 }
 
-/* CSS for NewsPortal Component */
-.news-portal {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 5px;
-}
-
-.news-article {
-  margin-bottom: 20px;
-  border: 1px solid #ddd;
+input[type="text"] {
   padding: 10px;
-  border-radius: 5px;
+  width: 300px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
 }
 
-.news-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.news-description {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-/* CSS for NewsDetail Component */
-.news-detail {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 5px;
-}
-
-.news-detail-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.news-detail-content {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.news-detail-back-button {
+button {
+  padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
   border: none;
-  padding: 12px 24px; /* Slightly larger padding for better touch interaction */
-  border-radius: 5px;
   cursor: pointer;
-  font-size: 18px; /* Increased font size for better readability */
-  transition: background-color 0.2s; /* Smooth hover effect */
 }
 
-/* Hover effect for the back button */
-.news-detail-back-button:hover {
+button:hover {
   background-color: #0056b3;
 }
 
-/* Styles for small screens (up to 768px wide) */
-@media screen and (max-width: 768px) {
-  .category-button {
-    padding: 10px 20px;
-    margin: 8px;
-  }
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
 }
 
-/* Styles for even smaller screens (up to 480px wide) */
-@media screen and (max-width: 480px) {
-  .category-button {
-    padding: 8px 16px;
-    margin: 6px;
-    font-size: 16px;
-  }
+.news-card {
+  width: calc(25% - 20px); /* Ukuran kartu agar ada 4 kartu per baris */
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.news-card:hover {
+  transform: scale(1.03);
+}
+
+.news-card img {
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.news-card h3 {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.news-card p {
+  color: #666;
+  font-size: 14px;
+  flex-grow: 1;
+}
+
+.no-news-message {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #999;
 }
