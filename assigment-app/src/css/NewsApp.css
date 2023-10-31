@@ -55,7 +55,7 @@ button:hover {
 }
 
 .news-card {
-  width: calc(25% - 20px); /* Ukuran kartu agar ada 4 kartu per baris */
+  width: calc(25% - 20px); /* Ukuran kartu pada desktop (4 kartu per baris) */
   margin: 10px;
   padding: 10px;
   border: 1px solid #ddd;
@@ -95,4 +95,22 @@ button:hover {
   margin-top: 20px;
   font-weight: bold;
   color: #999;
+}
+
+/* Responsif untuk tablet (max-width: 768px) */
+@media (max-width: 768px) {
+  .news-card {
+    width: calc(
+      33.33% - 20px
+    ); /* Ukuran kartu pada tablet (3 kartu per baris) */
+  }
+}
+
+/* Responsif untuk perangkat seluler (max-width: 576px) */
+@media (max-width: 576px) {
+  .news-card {
+    width: calc(
+      50% - 20px
+    ); /* Ukuran kartu pada perangkat seluler (2 kartu per baris) */
+  }
 }
