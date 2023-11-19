@@ -1,0 +1,35 @@
+Memanggil komponen dalam aplikasi React tergantung pada kebutuhan spesifik proyek dan desain antarmuka. Namun, berikut adalah beberapa komponen umum yang mungkin Anda perlukan saat membuat aplikasi mirip Spotify:
+
+1. **App** - Komponen utama yang mengandung seluruh aplikasi dan merender komponen lain.
+
+2. **Header** - Menampilkan header aplikasi dengan logo dan menu navigasi.
+
+3. **Footer** - Menampilkan bagian bawah aplikasi, mungkin berisi kontrol pemutaran dan informasi lagu.
+
+4. **Home** - Halaman utama dengan daftar putar populer atau rekomendasi.
+
+5. **Playlist** - Menampilkan daftar lagu dalam sebuah playlist.
+
+6. **Album** - Menampilkan informasi dan daftar lagu dalam sebuah album.
+
+7. **Search** - Menyediakan fungsi pencarian dan menampilkan hasil pencarian.
+
+8. **Player** - Menampilkan pemutar audio dengan kontrol pemutaran.
+
+9. **PlaylistForm** - Formulir untuk membuat atau mengedit playlist.
+
+10. **SongList** - Menampilkan daftar lagu dalam sebuah komponen.
+
+11. **SongItem** - Menampilkan informasi individu tentang satu lagu.
+
+12. **AudioPlayer** - Mengelola pemutaran audio dan tampilan kontrol pemutaran.
+
+13. **LoadingSpinner** - Menampilkan indikator loading selama proses pengambilan data.
+
+14. **ErrorBoundary** - Komponen untuk menangani kesalahan (error) di tingkat komponen.
+
+15. **Authentication** - Menangani proses autentikasi pengguna jika diperlukan.
+
+16. **PrivateRoute** - Mengelola rute-rute yang hanya dapat diakses oleh pengguna yang sudah terautentikasi.
+
+Pastikan untuk menyusun komponen-komponen ini sesuai dengan struktur aplikasi dan kebutuhan fungsionalitas Anda. Anda dapat membaginya menjadi komponen-komponen yang lebih kecil dan reusable untuk meningkatkan kejelasan dan pemeliharaan kode.

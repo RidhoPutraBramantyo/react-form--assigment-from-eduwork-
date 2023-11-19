@@ -30,6 +30,9 @@ const HomePage = () => {
           </Link>
           <Link to="/news">
             <button className="news-portal-button">News App</button>
+          </Link>{" "}
+          <Link to="/spotify-project">
+            <button className="spotify-project-button">Spotify Project</button>
           </Link>
         </div>
       </div>

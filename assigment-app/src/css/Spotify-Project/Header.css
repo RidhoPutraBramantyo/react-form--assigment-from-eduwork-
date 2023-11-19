@@ -1,0 +1,32 @@
+/* Header.css */
+.header {
+  background-color: #1db954;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo img {
+  width: 100px;
+}
+
+.header__nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.header__nav li {
+  margin-right: 20px;
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.header__nav a:hover {
+  text-decoration: underline;
+}
