@@ -1,26 +1,19 @@
 /* Sidebar.css */
+
 .sidebar {
-  width: 200px;
-  background-color: #333;
-  color: white;
-  padding: 1rem;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar li {
-  margin-bottom: 10px;
+  background-color: #1db954;
+  padding-top: 20px;
 }
 
 .sidebar a {
+  display: block;
   text-decoration: none;
-  color: white;
-  font-weight: bold;
+  color: #fff;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .sidebar a:hover {
-  text-decoration: underline;
+  background-color: #040306;
 }

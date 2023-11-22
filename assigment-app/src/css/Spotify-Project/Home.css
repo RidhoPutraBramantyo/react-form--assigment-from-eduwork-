@@ -1,10 +1,14 @@
 /* Home.css */
+
 .home {
-  padding: 2rem;
   text-align: center;
+  padding: 20px;
+  background-color: #fff; /* Ganti dengan warna latar yang diinginkan */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
 }
 
 .home h2 {
-  font-size: 2rem;
-  color: #333;
+  color: #1db954; /* Warna teks sesuai kebutuhan */
 }

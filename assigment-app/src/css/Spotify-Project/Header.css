@@ -1,15 +1,16 @@
 /* Header.css */
+
 .header {
-  background-color: #1db954;
-  color: white;
-  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #040306;
+  padding: 10px 20px;
 }
 
 .header__logo img {
   width: 100px;
+  height: auto;
 }
 
 .header__nav ul {
@@ -19,14 +20,15 @@
 
 .header__nav li {
   margin-right: 20px;
+  font-size: 18px;
 }
 
 .header__nav a {
   text-decoration: none;
-  color: white;
-  font-weight: bold;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
 }
 
 .header__nav a:hover {
-  text-decoration: underline;
+  color: #1db954;
 }

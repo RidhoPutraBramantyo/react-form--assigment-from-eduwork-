@@ -7,17 +7,32 @@ import Home from "../components/Spotify-Project/Home";
 import Playlist from "../components/Spotify-Project/Playlist";
 import Album from "../components/Spotify-Project/Album";
 import Search from "../components/Spotify-Project/Search";
+import Footer from "../components/Spotify-Project/Footer";
+// import "../css/Spotify-Project/SpotifyProject.css"; // Sesuaikan dengan path CSS Anda
 
 const SpotifyProject = () => {
   return (
-    <div className="app">
-      <Header />
-      <div className="app__body">
-        <Sidebar />
-        {/* Routes for Playlist, Album, Search, and Home */}
+    // <div className="container">
+    //   <Header />
+    //   <div className="app__body">
+    //     <Sidebar />
+    //     <div className="content">
+
+    //       <Home />
+    //     </div>
+    //   </div>
+    //   <Footer />
+    //   <Player />
+    // </div>
+    <center className="container">
+      <header>Header</header>
+      <div className="content">
+        <aside>Aside</aside>
+        <nav>Nav</nav>
       </div>
-      <Player />
-    </div>
+      <main>Main</main>
+      <footer>Footer</footer>
+    </center>
   );
 };
 

@@ -1,0 +1,81 @@
+/* App.css or SpotifyProject.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+  grid-template-rows: 70px 1fr auto;
+  grid-template-columns: 200px 1fr;
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: #040306;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.header__logo img {
+  width: 100px;
+  height: auto;
+}
+
+.header__nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.header__nav li {
+  font-size: 18px;
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+.header__nav a:hover {
+  color: #1db954;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #1db954;
+  padding-top: 20px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+  margin: 10px 0;
+  padding: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.sidebar a:hover {
+  background-color: #040306;
+}
+
+.content {
+  grid-area: content;
+  padding: 20px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #040306;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}

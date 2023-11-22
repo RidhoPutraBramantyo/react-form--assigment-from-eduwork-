@@ -1,25 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../css/Spotify-Project/Sidebar.css";
+
 const Sidebar = () => {
   return (
-    <aside className="sidebar">
-      <ul>
-        <li>
-          <Link to="/">Beranda</Link>
-        </li>
-        <li>
-          <Link to="/playlist">Daftar Putar</Link>
-        </li>
-        <li>
-          <Link to="/album">Album</Link>
-        </li>
-        <li>
-          <Link to="/search">Cari</Link>
-        </li>
-      </ul>
-    </aside>
+    <div className="sidebar">
+      <Link to="/home">Home</Link>
+      <Link to="/playlist">Playlist</Link>
+      <Link to="/album">Album</Link>
+      <Link to="/search">Search</Link>
+    </div>
   );
 };
-
 export default Sidebar;
