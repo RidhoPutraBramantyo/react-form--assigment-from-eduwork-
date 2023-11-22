@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import "../css/NewsApp.css";
 
 const NewsApp = () => {
@@ -12,19 +11,19 @@ const NewsApp = () => {
     fetchNewsData();
   }, []); // Effect ini hanya berjalan sekali setelah komponen dimount
 
-  const fetchNewsData = () => {
+  const fetchNewsData = async () => {
     const API_KEY = "231cf509958443008bff398d363fd7b3";
     const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`;
 
-    axios
-      .get(apiUrl)
-      .then((response) => {
-        setNews(response.data.articles);
-        console.log(response);
-      })
-      .catch((error) => {
-        console.error("Error fetching data: ", error);
-      });
+    try {
+      const response = await fetch(apiUrl);
+      const data = await response.json();
+
+      setNews(data.articles);
+      console.log(data);
+    } catch (error) {
+      console.error("Error fetching data: ", error);
+    }
   };
 
   const handleCategoryChange = (category) => {
