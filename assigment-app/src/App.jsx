@@ -8,6 +8,7 @@ import WithFormik from "./components/Part/WithFormik";
 
 import NewsApp from "./Pages/NewsApp";
 import SpotifyProject from "./Pages/SpotifyProject";
+import Redux from "./components/Redux/index";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/withformik" element={<WithFormik />} />
         <Route path="/news" element={<NewsApp />} />
         <Route path="/spotify-project" element={<SpotifyProject />} />
+        <Route path="/redux" element={<Redux />} />
       </Routes>
     </Router>
   );

@@ -22,6 +22,12 @@ const HomePage = () => {
           <Link to="/spotify-project">
             <button className="spotify-project-button">Spotify Project</button>
           </Link>
+          <Link to="/empty">
+            <button className="empty-button">!</button>
+          </Link>{" "}
+          <Link to="/redux">
+            <button className="redux-button">Redux</button>
+          </Link>
         </div>
       </div>
     </div>

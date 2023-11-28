@@ -52,7 +52,7 @@
 }
 
 button {
-  background-color: #4267b2;
+  background: none;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -64,11 +64,8 @@ button {
 }
 
 button:hover {
-  background-color: #3a5a9b;
-}
-
-.button-container a {
-  text-decoration: none;
+  background-color: azure;
+  color: black;
 }
 
 /* CSS untuk tampilan seluler */
@@ -109,9 +106,5 @@ button:hover {
   .button-container {
     display: flex;
     justify-content: center;
-  }
-
-  button {
-    font-size: 14px;
   }
 }

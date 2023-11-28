@@ -1,0 +1,25 @@
+import { combineReducers, createStore, applyMiddleware } from "redux";
+import userReducer from "./features/users"; // import user Reducer
+const itemReducer = (state, action) => {
+  // 1. reducers
+  switch (action.type) {
+    case "ADD_ITEM": // 2. actions
+      return;
+    default:
+      return state;
+  }
+};
+
+const logger = (state) => (next) => (action) => {
+  // 3. middleware
+  console.log("Memanggil ${action.type}");
+  return next(action);
+};
+
+let rootReducers = combineReducers({
+  items: itemReducer,
+  users: userReducer,
+});
+
+let store = createStore(rootReducers, applyMiddleware(logger)); // 4. store
+export default store;
